@@ -17,10 +17,15 @@ get-debloated-pkgs --add-common --prefer-nano
 
 # If the application needs to be manually built that has to be done down here
 
-# if you also have to make nightly releases check for DEVEL_RELEASE = 1
-#
-# if [ "${DEVEL_RELEASE-}" = 1 ]; then
-# 	nightly build steps
-# else
-# 	regular build steps
-# fi
+echo "Getting binary..."
+echo "---------------------------------------------------------------"
+link=https://github.com/clonehero-game/releases/releases/latest/download/Linux.$ARCH-Standalone.tar
+wget --retry-connrefused --tries=30 "$link" -O /tmp/temp.tar
+tar -xvf /tmp/temp.tar
+rm -f /tmp/temp.tar
+
+mkdir -p ./AppDir/bin
+mv -v ./'Linux - Standalone'/* ./AppDir/bin
+chmod +x ./AppDir/bin/clonehero
+cp -v ./AppDir/bin/clonehero_Data/Resources/UnityPlayer.png ./AppDir/.DirIcon
+cp -v ./AppDir/bin/clonehero_Data/Resources/UnityPlayer.png ./AppDir/clonehero.png
