@@ -1,19 +1,19 @@
 <div align="center">
 
-# TEMPLATE-AppImage 🐧
+# CloneHero-AppImage 🐧
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/TEMPLATE-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
-[![CI Build Status](https://github.com/pkgforge-dev/TEMPLATE-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
-[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/TEMPLATE-AppImage)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/CloneHero-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/CloneHero-AppImage/releases/latest)
+[![CI Build Status](https://github.com/pkgforge-dev/CloneHero-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/CloneHero-AppImage/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/CloneHero-AppImage)](https://github.com/pkgforge-dev/CloneHero-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/pkgforge-dev.png" width="128" />
+   <img src="https://github.com/user-attachments/assets/4e76180f-a8f1-4952-b36f-8a2bcd34b879" width="128" />
 </p>
 
 
 | Latest Stable Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest) | [Click here](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| [Click here](https://github.com/pkgforge-dev/CloneHero-AppImage/releases/latest) | [Click here](https://github.com/clonehero-game/releases) |
 
 </div>
 
