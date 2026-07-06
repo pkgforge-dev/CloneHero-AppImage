@@ -20,7 +20,10 @@ get-debloated-pkgs --add-common --prefer-nano
 echo "Getting binary..."
 echo "---------------------------------------------------------------"
 link=https://github.com/clonehero-game/releases/releases/latest/download/Linux.$ARCH-Standalone.tar
-wget --retry-connrefused --tries=30 "$link" -O /tmp/temp.tar
+if ! wget --retry-connrefused --tries=30 "$link" -O /tmp/temp.tar 2>/tmp/download.log; then
+	cat /tmp/download.log
+	exit 1
+fi
 tar -xvf /tmp/temp.tar
 rm -f /tmp/temp.tar
 
@@ -29,3 +32,5 @@ mv -v ./'Linux - Standalone'/* ./AppDir/bin
 chmod +x ./AppDir/bin/clonehero
 cp -v ./AppDir/bin/clonehero_Data/Resources/UnityPlayer.png ./AppDir/.DirIcon
 cp -v ./AppDir/bin/clonehero_Data/Resources/UnityPlayer.png ./AppDir/clonehero.png
+
+grep -vi '/latest' /tmp/download.log | awk -F'/' '/Location:/{print $(NF-1); exit}' > ~/version
